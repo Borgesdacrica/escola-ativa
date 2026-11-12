@@ -1,0 +1,72 @@
+/* Estilos próprios da EscolaAtiva (complementam o Bootstrap) */
+
+:root {
+  --ea-radius: 0.75rem;
+}
+
+body {
+  background-color: #f5f7fb;
+}
+
+.card {
+  border-radius: var(--ea-radius);
+}
+
+.activity-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.activity-card.concluida .activity-title {
+  text-decoration: line-through;
+  color: var(--bs-secondary-color);
+}
+
+.activity-title {
+  word-break: break-word;
+}
+
+.stat-card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05);
+}
+
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 2000;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Foco bem visível para quem navega com o teclado */
+:focus-visible {
+  outline: 3px solid #f59e0b !important;
+  outline-offset: 2px;
+}
+
+/* Ecrãs pequenos (telemóvel) */
+@media (max-width: 575.98px) {
+  h1.h3 {
+    font-size: 1.35rem;
+  }
+
+  .activity-card .btn {
+    flex: 1 1 auto;
+  }
+
+  .activity-card .btn.ms-auto {
+    margin-left: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .activity-card {
+    transition: none;
+  }
+}
