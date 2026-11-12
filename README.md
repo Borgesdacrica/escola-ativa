@@ -20,7 +20,7 @@ Não é preciso servidor nem base de dados: os dados ficam guardados no `localSt
 ## Instalação
 
 ```bash
-git clone https://github.com/<UTILIZADOR>/escola-ativa.git
+git clone https://github.com/Borgesdacrica/escola-ativa.git
 cd escola-ativa
 npm install
 ```
@@ -48,7 +48,7 @@ Abrir no navegador o endereço que aparece no terminal (normalmente <http://loca
 ## Versão online
 
 Cada `git push` para o ramo `main` publica automaticamente a aplicação no **GitHub Pages** (ver `.github/workflows/deploy.yml`):
-`https://<UTILIZADOR>.github.io/escola-ativa/`
+`https://Borgesdacrica.github.io/escola-ativa/`
 
 ## Funcionalidades
 
